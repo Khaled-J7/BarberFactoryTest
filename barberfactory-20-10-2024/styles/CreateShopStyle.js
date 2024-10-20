@@ -1,0 +1,300 @@
+import { StyleSheet, Dimensions } from 'react-native';
+
+const { width, height } = Dimensions.get('window');
+
+export default StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#f0f2f5',
+  },
+  scrollContent: {
+    paddingBottom: 20,
+  },
+  coverPhotoContainer: {
+    height: 220,
+    backgroundColor: '#0B192C',
+    position: 'relative',
+    justifyContent: 'flex-end',
+  },
+  coverPhoto: {
+    width: '100%',
+    height: '100%',
+  },
+  coverPhotoPlaceholder: {
+    width: '100%',
+    height: '120%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingBottom: 50,
+  },
+  uploadButtonCover: {
+    position: 'absolute',
+    top: 150,
+    right: 10,
+    backgroundColor: '#F9A826',
+    borderRadius: 20,
+    padding: 8,
+  },
+  profilePhotoContainer: {
+    alignItems: 'center',
+    marginTop: -35,
+  },
+  profilePhotoWrapper: {
+    position: 'relative',
+    width: 150,
+    height: 150,
+  },
+  profilePhoto: {
+    width: '100%',
+    height: '100%',
+    borderRadius: 75,
+    borderWidth: 5,
+    borderColor: '#fff',
+  },
+  profilePhotoPlaceholder: {
+    width: '100%',
+    height: '100%',
+    borderRadius: 75,
+    backgroundColor: '#0B192C',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderWidth: 5,
+    borderColor: '#fff',
+  },
+  uploadButtonProfile: {
+    position: 'absolute',
+    bottom: 0,
+    right: 0,
+    backgroundColor: '#F9A826',
+    borderRadius: 20,
+    padding: 8,
+    borderWidth: 2,
+    borderColor: '#fff',
+  },
+  placeholderText: {
+    color: '#fff',
+    marginTop: 10,
+    fontFamily: 'Poppins-Regular',
+  },
+  infoContainer: {
+    backgroundColor: '#fff',
+    borderRadius: 10,
+    padding: 20,
+    marginHorizontal: 20,
+    marginTop: 20,
+    elevation: 3,
+  },
+  infoRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 10,
+  },
+  infoText: {
+    marginLeft: 10,
+    fontSize: 16,
+    color: '#0B192C',
+    fontFamily: 'Poppins-Regular',
+  },
+  editButton: {
+    backgroundColor: '#0B192C',
+    padding: 10,
+    borderRadius: 5,
+    alignItems: 'center',
+    marginTop: 10,
+  },
+  editButtonText: {
+    color: '#fff',
+    fontFamily: 'Poppins-Bold',
+  },
+  addInfoButton: {
+    backgroundColor: '#0B192C',
+    margin: 20,
+    padding: 15,
+    borderRadius: 10,
+    alignItems: 'center',
+  },
+  addInfoButtonText: {
+    color: '#fff',
+    fontSize: 18,
+    fontFamily: 'Poppins-Bold',
+  },
+  storeIconContainer: {
+    alignItems: 'center',
+    marginTop: 20,
+  },
+  storeStatus: {
+    marginTop: 5,
+    fontFamily: 'Poppins-Regular',
+    color: '#0B192C',
+  },
+  showcaseContainer: {
+    margin: 20,
+    backgroundColor: '#fff',
+    borderRadius: 10,
+    padding: 20,
+    alignItems: 'center',
+  },
+  showcaseTitle: {
+    fontSize: 20,
+    color: '#0B192C',
+    marginBottom: 10,
+    fontFamily: 'Poppins-Bold',
+  },
+  carouselContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    width: '100%',
+  },
+  showcaseMedia: {
+    width: width * 0.6,
+    height: width * 0.6,
+    borderRadius: 10,
+  },
+  addMediaButton: {
+    alignItems: 'center',
+  },
+  addMediaText: {
+    marginTop: 10,
+    color: '#0B192C',
+    fontFamily: 'Poppins-Regular',
+  },
+  addShowcaseButton: {
+    marginTop: 10,
+  },
+  deleteButton: {
+    position: 'absolute',
+    top: 10,
+    right: 10,
+    backgroundColor: 'rgba(255,255,255,0.7)',
+    borderRadius: 15,
+    padding: 5,
+  },
+  saveProfileButton: {
+    backgroundColor: '#4CAF50',
+    margin: 20,
+    padding: 15,
+    borderRadius: 10,
+    alignItems: 'center',
+  },
+  saveProfileButtonText: {
+    color: '#fff',
+    fontSize: 18,
+    fontFamily: 'Poppins-Bold',
+  },
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  formContainer: {
+    backgroundColor: '#fff',
+    width: '90%',
+    borderRadius: 20,
+    padding: 20,
+    elevation: 5,
+  },
+  formTitle: {
+    fontSize: 24,
+    color: '#0B192C',
+    marginBottom: 20,
+    fontFamily: 'Poppins-Bold',
+    textAlign: 'center',
+  },
+  input: {
+    backgroundColor: '#f0f2f5',
+    borderRadius: 10,
+    padding: 15,
+    marginBottom: 15,
+    fontSize: 16,
+    fontFamily: 'Poppins-Regular',
+  },
+  formButtonsContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: 20,
+  },
+  formButton: {
+    padding: 15,
+    borderRadius: 10,
+    alignItems: 'center',
+    flex: 1,
+    marginHorizontal: 5,
+  },
+  saveButton: {
+    backgroundColor: '#0B192C',
+  },
+  formButtonText: {
+    color: '#fff',
+    fontSize: 18,
+    fontFamily: 'Poppins-Bold',
+  },
+  toggleContainer: {
+    backgroundColor: '#fff',
+    borderRadius: 20,
+    padding: 20,
+    alignItems: 'center',
+    width: '80%',
+  },
+  toggleTitle: {
+    fontSize: 20,
+    color: '#0B192C',
+    marginBottom: 20,
+    fontFamily: 'Poppins-Bold',
+  },
+  toggleOptions: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    width: '100%',
+  },
+  toggleOption: {
+    flex: 1,
+    padding: 15,
+    borderRadius: 10,
+    alignItems: 'center',
+    marginHorizontal: 5,
+  },
+  toggleActive: {
+    elevation: 5,
+  },
+  toggleOpen: {
+    backgroundColor: '#4CAF50',
+  },
+  toggleClosed: {
+    backgroundColor: '#F44336',
+  },
+  toggleText: {
+    color: '#fff',
+    fontSize: 18,
+    fontFamily: 'Poppins-Bold',
+  },
+  mediaViewerContainer: {
+    flex: 1,
+    backgroundColor: 'rgba(0, 0, 0, 0.9)',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  fullMedia: {
+    width: '100%',
+    height: '80%',
+  },
+  closeMediaViewer: {
+    position: 'absolute',
+    top: 40,
+    right: 20,
+  },
+  closeButton: {
+    alignSelf: 'flex-end',
+    padding: 10,
+  },
+  closeButtonText: {
+    color: '#C8102E',
+    fontSize: 16,
+    fontFamily: 'Poppins-Regular',
+    fontWeight: 'bold',
+  },
+  disabledButton: {
+    opacity: 0.5,
+  },
+});
